@@ -5,7 +5,6 @@ import { AuthContext } from "../context/AuthContext"
 
 export const LoginPage = () => {
   
-
   const auth = useContext(AuthContext);
   const navigate = useNavigate()
   const [email, setEmail] = useState("")
@@ -23,14 +22,10 @@ export const LoginPage = () => {
     
   }
   
-
   return(
     <div className="flex flex-1 justify-center items-center h-screen bg-gray-100">
       <div className="flex flex-col w-[400px] h-[500px] items-center justify-center border rounded-lg shadow-2xl bg-white gap-4" >
         <Icon/>
-        {/* <Input name={"E-mail"} type={"email"} description={"@gmail.com"}/>
-        <Input name={"Password"} type={"password"} description={"*********"}/>
-        */}
         <div className="flex flex-col gap-3">
           <label>E-mail</label>
           <input 
